@@ -1,4 +1,4 @@
-# GenFifo
+# GenFifoLifo
 
 Nesse desafio, você deverá criar uma aplicação em Elixir (somente Elixir), onde nessa aplicação teremos um módulo que implementa a estrutura de dados Fila utilizando Genservers.
 
@@ -24,6 +24,10 @@ Em caso de qualquer dúvida, você pode conferir a documentação oficial do Gen
 No exemplo acima, a função `Queue.start_link` é chamada para iniciar a fila com uma lista contendo três valores `[1, 2, 3]`. Após isso, é chamada a função `Queue.enqueue` com o pid e um novo valor a ser acrescentado na fila e ao chamar a função `Queue.dequeue` com o pid, é removido o primeiro valor da fila que era o `1`.
 
 Você não precisa deixar o seu GenServer rodando sobre um Supervisor nesse desafio.
+
+## LIFO
+
+O módulo GenFifo.Stack implementa o tratamento de pilhas 
 
 ## Installation
 
